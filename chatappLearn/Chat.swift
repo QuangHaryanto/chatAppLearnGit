@@ -60,7 +60,7 @@ struct Chat: View {
                     }.padding()
                 }
             }
-        }.navigationTitle("Rogie, Justin")
+        }.navigationTitle("Haryanto, Kurniawan")
             .navigationBarItems(trailing:
                                     HStack {
                 Button {
