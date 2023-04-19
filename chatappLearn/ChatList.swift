@@ -37,7 +37,7 @@ struct ChatList: View {
             
             List(searchResults, id: \.self) { player in
                 NavigationLink {
-                    Chat()
+                    Chat(title: player)
                 } label: {
                     Text(player)
                 }

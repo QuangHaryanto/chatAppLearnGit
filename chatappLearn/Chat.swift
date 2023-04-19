@@ -12,9 +12,11 @@ import SwiftUI
 struct Chat: View {
     @ObservedObject var model = ChatModel()
     let navBarAppearence = UINavigationBarAppearance()
+    var title: String
     
-    init() {
-            navBarAppearence.configureWithOpaqueBackground()
+    init(title: String) {
+        self.title = title
+        navBarAppearence.configureWithOpaqueBackground()
             navBarAppearence.backgroundColor = .systemCyan
             navBarAppearence.titleTextAttributes = [.foregroundColor: UIColor.black]
             navBarAppearence.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
@@ -60,7 +62,7 @@ struct Chat: View {
                     }.padding()
                 }
             }
-        }.navigationTitle("Haryanto, Kurniawan")
+        }.navigationTitle(title)
             .navigationBarItems(trailing:
                                     HStack {
                 Button {
@@ -76,6 +78,6 @@ struct Chat: View {
 
 struct Chat_Previews: PreviewProvider {
     static var previews: some View {
-        Chat()
+        Chat(title: "Room Title")
     }
 }
