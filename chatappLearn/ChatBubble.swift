@@ -38,13 +38,6 @@ struct ChatBubble<Content>: View where Content: View {
                     .background(color)
                     .clipShape(RoundedRectangle(cornerRadius: 25))
                     .shadow(color: color.opacity(1), radius: 6, x: 0, y: 3)
-                
-//                    .overlay(
-//                        Image(systemName: "arrowtriangle.left.fill")
-//                            .foregroundColor(color)
-//                            .rotationEffect(Angle(degrees: position == .left ? -50 : -130))
-//                            .offset(x: position == .left ? -5 : 5)
-//                        ,alignment: position == .left ? .bottomLeading : .bottomTrailing)
 
                     GeometryReader { proxy in
                         HStack{
@@ -84,8 +77,8 @@ struct ChatBubble<Content>: View where Content: View {
                                 .clipShape(Capsule())
                                 .shadow(color: color.opacity(0.5), radius: 6, x: 0, y: 3)
                             .offset(x:position == .left ? proxy.size.width - 305 : proxy.size.width - 130 , y:-13)
-                        }//.background(.yellow)
-                    }//.background(.cyan)
+                        }
+                    }
 
             }
         }
