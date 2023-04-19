@@ -42,22 +42,8 @@ struct ChatList: View {
                 }
             }
             .navigationTitle("Chats")
-//            .navigationBarItems(trailing:
-//                                    HStack {
-//                Button {
-//                    isSearchBar.toggle()
-//                } label: {
-//                    Image(systemName: "magnifyingglass")
-//                }
-//
-//
-//            })
-            
         }
         .searchable(text: $searchText) {
-//            ForEach(searchResults, id: \.self) { result in
-//                Text("\(result)").searchCompletion(result)
-//            }
         }
     }
     
@@ -68,7 +54,6 @@ struct ChatList: View {
                 return friends.filter { $0.contains(searchText) }
             }
         }
-    
 }
 
 struct ChatList_Previews: PreviewProvider {
