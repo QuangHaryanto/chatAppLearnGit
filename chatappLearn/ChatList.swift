@@ -24,6 +24,7 @@ struct ChatList: View {
     let friends = [
         "Rogie",
         "Justin",
+        "Kurniawan",
         "Rogie, Justin",
         "Jamie, Roy",
     ]
