@@ -27,6 +27,8 @@ struct ChatList: View {
         "Kurniawan",
         "Rogie, Justin",
         "Jamie, Roy",
+        "Athoya",
+        "Haryanto"
     ]
     
     var body: some View {
